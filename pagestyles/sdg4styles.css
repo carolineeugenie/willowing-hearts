@@ -1,0 +1,212 @@
+html, body {
+    margin: 0 auto;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: antiquewhite;
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        }
+        body::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+
+            background-image: url('https://i.pinimg.com/736x/fe/0e/fb/fe0efb1edf871391963db6569004f3c3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+            filter: blur(3px);
+            transform: scale(1.05);
+        }
+        .square {
+            width: 80vw;
+            max-width: 1300px;
+            height: 90vh;
+            max-height: 700px;
+            background-color: beige;
+            border-radius: 50px;
+            box-sizing: border-box;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+        }
+        .title {
+            font-family: "Ruge Boogie", "Twinkle Star", cursive;
+            font-weight: 500;
+            font-size: clamp(5rem, 10vw, 7.4rem);
+            -webkit-text-stroke: 2px #7E5A5E;
+            color: #FBD7DB;
+            position: absolute;
+            text-align: center;
+            top: -5%;
+            z-index: 10;
+        }
+        .sdg{
+            width: 30vw;
+            max-width: 500px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+        }
+        .text{
+            font-family: "Twinkle Star", cursive;
+            font-weight: 500;
+            width: 45vw;
+            max-width: 750px;
+            height: 30vh;
+            max-height: 350px;
+            font-size: clamp(0.5rem, 1.6vw, 1.3rem);
+            color: #7E5A5E;
+            position: absolute;
+            top: 24%;
+            left: 65%;
+            transform: translate(-50%, 0);
+            text-align: left;
+        }
+        .back-button{
+            position: absolute;
+            background-color: #E2E294;
+            width: 15vw;
+            max-width: 200px;
+            height: 8vw;
+            max-height: 75px;
+            font-family: "Cause", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: clamp(0.5rem, 2vw, 3rem);
+            color: #7E5A5E;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @media screen and (max-width: 1200px){
+            .sdg{
+                width: 40vw;
+                max-width: 390px;
+            }
+        }
+         @media screen and (max-width: 1000px){
+            .sdg{
+                width: 40vw;
+                max-width: 350px;
+            }
+        }
+        @media screen and (max-width: 900px){
+            .sdg{
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40vw;
+            max-width: 300px;
+            }
+            .text{
+            width: 60vw;
+            max-width: 750px;
+            height: 30vh;
+            max-height: 350px;
+            font-size: clamp(0.7rem, 1.5vw, 1.6rem);
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+        }
+        @media screen and (max-width: 700px){
+            .text{
+            width: 60vw;
+            max-width: 750px;
+            height: 30vh;
+            max-height: 350px;
+            font-size: clamp(0.65rem, 1.6vw, 1.6rem);
+            top: 71%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+        }
+        @media screen and (max-width: 600px){
+            .title{
+            font-size: clamp(4rem, 10vw, 7.5rem);
+            top: 0;
+            }
+            .sdg{
+            width: 60vw;
+            max-width: 290px;
+            }
+        }
+        @media screen and (max-width: 500px){
+            .text{
+            width: 60vw;
+            max-width: 750px;
+            height: 30vh;
+            max-height: 350px;
+            font-size: clamp(0.6rem, 1.6vw, 1.6rem);
+            top: 72%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+        }
+        @media screen and (max-width: 440px){
+            .title{
+                font-size: clamp(3.5rem, 10vw, 7.5rem);
+                top: 0;
+                -webkit-text-stroke: 1px #7E5A5E;
+            }
+            .text{
+            width: 60vw;
+            max-width: 750px;
+            height: 30vh;
+            max-height: 350px;
+            font-size: clamp(0.6rem, 1.6vw, 1.6rem);
+            top: 72%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+        }
+         @media screen and (max-width: 379px){
+            .sdg{
+            width: 70vw;
+            max-width: 275px;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+            .text{
+            width: 60vw;
+            max-width: 750px;
+            height: 30vh;
+            max-height: 350px;
+            font-size: clamp(0.5rem, 1.6vw, 1.6rem);
+            top: 72%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+            .title{
+            font-size: clamp(3.3rem, 10vw, 7.5rem);
+            }
+            .title{
+            top: -2%;
+            }
+        }
