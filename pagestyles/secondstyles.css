@@ -113,6 +113,7 @@ body {
         }
         .img1 {
             height: 22vw;
+            transform: rotate(90deg);
         }
         .img2 {
             height: 22vw;
